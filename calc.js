@@ -85,6 +85,9 @@ document.querySelector('.buttons').onclick = (event) => {
         case "%":
             a = (a / 100) * b;
             break;
+        case "+/-":
+            a = a * (-1);
+            break;
         }
         finish = true;
         out.textContent = a;
